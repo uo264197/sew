@@ -3,7 +3,7 @@ body {
     font: 400 15px Times, serif;
     line-height: 1.8;
     color: black;
-    background: green;
+    background: lightgreen;
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
