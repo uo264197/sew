@@ -1,0 +1,56 @@
+/* a=0 b=0 c=1 -> specificity =   1 */
+body {
+    font: 400 15px Times, serif;
+    line-height: 1.8;
+    color: black;
+    background: lightgreen;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h1 {
+    background-color:black;
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h2 {
+    color: red;
+    background: lightgreen;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h3 {
+    color: blue;
+    background: lightgreen;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#actores {
+    border: solid medium;
+}
+
+/* a=2 b=0 c=0 -> specificity =   200 */
+#actores td, #actores th{
+    border: solid thin;
+    color: black;
+    background: lightblue;
+}
+
+/* a=2 b=0 c=0 -> specificity =   200 */
+#trailer1979, #trailer2009 {
+    width: 900px;
+    height: 400px;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#cartelera1979 {
+    width: 300px;
+    height: 600px;
+    align-self: center;
+}
+
+#temaPrincipal {
+    text-align: center;
+}
