@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* a=3 b=0 c=0 -> specificity =   300 */
 #bodyJuegos, #bodyTrailers {
     display: flex;
@@ -108,4 +109,116 @@
 /* a=1 b=0 c=0 -> specificity =   100 */
 #stc { grid-area: stc }
 /* a=1 b=0 c=0 -> specificity =   100 */
+=======
+/* a=3 b=0 c=0 -> specificity =   300 */
+#bodyJuegos, #bodyTrailers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#bodyEquipo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#equipoPelicula {
+    align-self: center;
+}
+
+/* a=0 b=1 c=0 -> specificity =   10 */
+.equipo {
+    align-self: center;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#bodyPrincipal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#cabecera {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* a=0 b=1 c=0 -> specificity =   10 */
+.navegador {
+    align-self: center;
+}
+
+/* a=0 b=1 c=0 -> specificity =   10 */
+.trailers {
+    display: flex;
+    flex-flow: column;
+}
+
+/* a=0 b=3 c=0 -> specificity =   30 */
+.moviles, .recreativas {
+    display: flex;
+    flex-flow: column;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+#pie {
+    display: flex;
+    flex-flow: column;
+}
+
+/* a=1 b=0 c=0 -> specificity =   100 */
+.videojuegos {
+    display: grid;
+    grid-template-areas:"titulo titulo"
+                        "stsa stsai"
+                        "sta stai"
+                        "stdac stdaci"
+                        "sto stoi"
+                        "stsc stsci"
+                        "stsos stsosi"
+                        "stc stci";
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+
+/* a=0 b=1 c=0 -> specificity =   10 */
+.tituloTipoJuego {
+    align-self: center;
+    grid-area: titulo;
+}
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsa { grid-area: stsa }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsai { grid-area: stsai }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#sta { grid-area: sta }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stai { grid-area: stai }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stdac { grid-area: stdac }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stdaci { grid-area: stdaci }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#sto { grid-area: sto }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stoi { grid-area: stoi }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsc { grid-area: stsc }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsci { grid-area: stsci }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsos { grid-area: stsos }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stsosi { grid-area: stsosi }
+/* a=1 b=0 c=0 -> specificity =   100 */
+#stc { grid-area: stc }
+/* a=1 b=0 c=0 -> specificity =   100 */
+>>>>>>> f871e131e498f8e587a056ccf17c128878520463
 #stci { grid-area: stci }
