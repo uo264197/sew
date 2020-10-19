@@ -12,10 +12,12 @@
     justify-content: center;
 }
 
+/* a=1 b=0 c=0 -> specificity =   100 */
 #equipoPelicula {
     align-self: center;
 }
 
+/* a=0 b=1 c=0 -> specificity =   10 */
 .equipo {
     align-self: center;
 }
@@ -27,12 +29,14 @@
     justify-content: center;
 }
 
+/* a=1 b=0 c=0 -> specificity =   100 */
 #cabecera {
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
 
+/* a=0 b=1 c=0 -> specificity =   10 */
 .navegador {
     align-self: center;
 }
@@ -49,6 +53,7 @@
     flex-flow: column;
 }
 
+/* a=1 b=0 c=0 -> specificity =   100 */
 #pie {
     display: flex;
     flex-flow: column;
