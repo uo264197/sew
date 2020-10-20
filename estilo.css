@@ -21,7 +21,7 @@ h2 {
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
-h3 {
+h3, h4 {
     color: darkblue;
     background: lightgreen;
 }
@@ -40,8 +40,8 @@ h3 {
 
 /* a=2 b=0 c=0 -> specificity =   200 */
 #trailer1979, #trailer2009 {
-    width: 900px;
-    height: 400px;
+    width: 500px;
+    height: 220px;
 }
 
 /* a=1 b=0 c=0 -> specificity =   100 */

@@ -1,8 +1,14 @@
 /* a=3 b=0 c=0 -> specificity =   300 */
-#bodyJuegos, #bodyTrailers {
+#bodyJuegos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+
+#bodyTrailers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 /* a=1 b=0 c=0 -> specificity =   100 */
